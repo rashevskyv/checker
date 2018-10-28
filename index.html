@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        body {
+            font-family: Open Sans, Arial;
+            color: #454545;
+            font-size: 16px;
+            line-height: 1.4;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+
+
+<div style="text-align:center;">
+    <h2>Проверка консоли на наличие уязвимости Fusée Gelée</h2>
+    <p>Введите первые 9 символов серийного номера консоли.</p>
+    <input class="inputtext" type="text" id="nxsn" name="country_code" pattern="[xX][aA][wWjJ](1|4|7)[0-9]+"
+           placeholder="XAW100000"
+           onkeyup="myFunction()">
+    <p id="result" class="blocktext"></p>
+</div>
+
+<script>
+
+    function myFunction() {
+        var x = document.getElementById("nxsn");
+        if (x.validity.valid && x.value.length > 7) {
+            var series = x.value.substring(2, 4).toUpperCase();
+            var sn;
+            switch (series) {
+                case 'W1':
+                    sn = x.value.substring(4, 8);
+                    if (sn.localeCompare('01') >= 0) {
+                        document.getElementById("result").innerHTML = "Уязвимость устранена";
+                    } else if (sn.localeCompare('0079') >= 0) {
+                        document.getElementById("result").innerHTML = "Уязвимость возможно устранена";
+                    } else if (sn.localeCompare('0078') <= 0) {
+                        document.getElementById("result").innerHTML = "Уязвимость присутствует";
+                    } else {
+                        document.getElementById("result").innerHTML = "Нет информации";
+                    }
+                    break;
+                case 'W4':
+                    sn = x.value.substring(4, 8);
+                    if (sn.localeCompare('0013') >= 0) {
+                        document.getElementById("result").innerHTML = "Уязвимость устранена";
+                    } else if (sn.localeCompare('0012') >= 0) {
+                        document.getElementById("result").innerHTML = "Уязвимость возможно устранена";
+                    } else if (sn.localeCompare('0011') <= 0) {
+                        document.getElementById("result").innerHTML = "Уязвимость присутствует";
+                    } else {
+                        document.getElementById("result").innerHTML = "Нет информации";
+                    }
+                    break;
+                case 'W7':
+                    sn = x.value.substring(4, 9);
+                    if (sn.localeCompare('0019') >= 0) {
+                        document.getElementById("result").innerHTML = "Уязвимость устранена";
+                    } else if (sn.localeCompare('00179') >= 0) {
+                        document.getElementById("result").innerHTML = "Уязвимость возможно устранена";
+                    } else if (sn.localeCompare('00178') <= 0) {
+                        document.getElementById("result").innerHTML = "Уязвимость присутствует";
+                    } else {
+                        document.getElementById("result").innerHTML = "Нет информации";
+                    }
+                    break;
+                case 'J1':
+                    document.getElementById("result").innerHTML = "Уязвимость предполжительно присутствует, нет точной информации";
+                    break;
+                case 'J4':
+                    sn = x.value.substring(4, 9);
+                    if (sn.localeCompare('006') >= 0) {
+                        document.getElementById("result").innerHTML = "Уязвимость устранена";
+                    } else if (sn.localeCompare('0051') >= 0) {
+                        document.getElementById("result").innerHTML = "Уязвимость возможно устранена";
+                    } else if (sn.localeCompare('0050') <= 0) {
+                        document.getElementById("result").innerHTML = "Уязвимость присутствует";
+                    } else {
+                        document.getElementById("result").innerHTML = "Нет информации";
+                    }
+                    break;
+                case 'J7':
+                    sn = x.value.substring(4, 9);
+                    if (sn.localeCompare('005') >= 0) {
+                        document.getElementById("result").innerHTML = "Уязвимость устранена";
+                    } else if (sn.localeCompare('0043') >= 0) {
+                        document.getElementById("result").innerHTML = "Уязвимость возможно устранена";
+                    } else if (sn.localeCompare('0042') <= 0) {
+                        document.getElementById("result").innerHTML = "Уязвимость присутствует";
+                    } else {
+                        document.getElementById("result").innerHTML = "Нет информации";
+                    }
+                    break;
+            }
+        }
+        else {
+            document.getElementById("result").innerHTML = "";
+        }
+    }
+</script>
+</body>
+</html>
