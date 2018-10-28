@@ -57,15 +57,19 @@
                     }
                     break;
                 case 'W7':
-                    sn = x.value.substring(4, 9);
-                    if (sn.localeCompare('0019') >= 0) {
-                        document.getElementById("result").innerHTML = "Уязвимость устранена";
-                    } else if (sn.localeCompare('00179') >= 0) {
-                        document.getElementById("result").innerHTML = "Уязвимость возможно устранена";
-                    } else if (sn.localeCompare('00178') <= 0) {
-                        document.getElementById("result").innerHTML = "Уязвимость присутствует";
+                    if (x.value.length > 8) {
+                        sn = x.value.substring(4, 9);
+                        if (sn.localeCompare('0019') >= 0) {
+                            document.getElementById("result").innerHTML = "Уязвимость устранена";
+                        } else if (sn.localeCompare('00179') >= 0) {
+                            document.getElementById("result").innerHTML = "Уязвимость возможно устранена";
+                        } else if (sn.localeCompare('00178') <= 0) {
+                            document.getElementById("result").innerHTML = "Уязвимость присутствует";
+                        } else {
+                            document.getElementById("result").innerHTML = "Нет информации";
+                        }
                     } else {
-                        document.getElementById("result").innerHTML = "Нет информации";
+                        document.getElementById("result").innerHTML = "";
                     }
                     break;
                 case 'J1':
