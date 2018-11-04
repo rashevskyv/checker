@@ -73,10 +73,17 @@
                     }
                     break;
                 case 'J1':
-                    document.getElementById("result").innerHTML = "Уязвимость предполжительно присутствует, нет точной информации";
+					sn = x.value.substring(4, 8);
+                    if (sn.localeCompare('0031') >= 0) {
+                        document.getElementById("result").innerHTML = "Уязвимость возможно устранена";
+                    } else if (sn.localeCompare('0030') <= 0) {
+                        document.getElementById("result").innerHTML = "Уязвимость присутствует";
+                    } else {
+                        document.getElementById("result").innerHTML = "Нет информации";
+                    }
                     break;
                 case 'J4':
-                    sn = x.value.substring(4, 9);
+                    sn = x.value.substring(4, 8);
                     if (sn.localeCompare('006') >= 0) {
                         document.getElementById("result").innerHTML = "Уязвимость устранена";
                     } else if (sn.localeCompare('0051') >= 0) {
@@ -88,7 +95,7 @@
                     }
                     break;
                 case 'J7':
-                    sn = x.value.substring(4, 9);
+                    sn = x.value.substring(4, 8);
                     if (sn.localeCompare('005') >= 0) {
                         document.getElementById("result").innerHTML = "Уязвимость устранена";
                     } else if (sn.localeCompare('0043') >= 0) {
