@@ -7,11 +7,11 @@
                 case 'W1':
                     sn = x.value.substring(4, 8);
                     if (sn.localeCompare('01') >= 0) {
-                        document.getElementById("result").innerHTML = '<div class="failed">Уязвимость устранена</div>';
+                        document.getElementById("result").innerHTML = '<div class="failed">Уязвимость устранена<br>Вы не сможете прошить приставку!</div>';
                     } else if (sn.localeCompare('0079') >= 0) {
-                        document.getElementById("result").innerHTML = '<div class="maybe">Уязвимость возможно устранена</div>';
+                        document.getElementById("result").innerHTML = '<div class="maybe">Уязвимость возможно устранена<br>Если вы собираетесь купить эту консоль, подумайте ещё раз, если же уже купили, просто попробуйте</div>';
                     } else if (sn.localeCompare('0078') <= 0) {
-                        document.getElementById("result").innerHTML = '<div class="passed">Уязвимость присутствует</div>';
+                        document.getElementById("result").innerHTML = '<div class="passed">Уязвимость присутствует<br>Вы можете прошить эту приставку</div>';
                     } else {
                         document.getElementById("result").innerHTML = '<div class="unknown">Нет информации</div>';
                     }
@@ -19,11 +19,11 @@
                 case 'W4':
                     sn = x.value.substring(4, 8);
                     if (sn.localeCompare('0013') >= 0) {
-                        document.getElementById("result").innerHTML = '<div class="failed">Уязвимость устранена</div>';
+                        document.getElementById("result").innerHTML = '<div class="failed">Уязвимость устранена<br>Вы не сможете прошить приставку!</div>';
                     } else if (sn.localeCompare('0012') >= 0) {
-                        document.getElementById("result").innerHTML = '<div class="maybe">Уязвимость возможно устранена</div>';
+                        document.getElementById("result").innerHTML = '<div class="maybe">Уязвимость возможно устранена<br>Если вы собираетесь купить эту консоль, подумайте ещё раз, если же уже купили, просто попробуйте</div>';
                     } else if (sn.localeCompare('0011') <= 0) {
-                        document.getElementById("result").innerHTML = '<div class="passed">Уязвимость присутствует</div>';
+                        document.getElementById("result").innerHTML = '<div class="passed">Уязвимость присутствует<br>Вы можете прошить эту приставку</div>';
                     } else {
                         document.getElementById("result").innerHTML = '<div class="unknown">Нет информации</div>';
                     }
@@ -32,11 +32,11 @@
                     if (x.value.length > 8) {
                         sn = x.value.substring(4, 9);
                         if (sn.localeCompare('0019') >= 0) {
-                            document.getElementById("result").innerHTML = '<div class="failed">Уязвимость устранена</div>';
+                            document.getElementById("result").innerHTML = '<div class="failed">Уязвимость устранена<br>Вы не сможете прошить приставку!</div>';
                         } else if (sn.localeCompare('00179') >= 0) {
-                            document.getElementById("result").innerHTML = '<div class="maybe">Уязвимость возможно устранена</div>';
+                            document.getElementById("result").innerHTML = '<div class="maybe">Уязвимость возможно устранена<br>Если вы собираетесь купить эту консоль, подумайте ещё раз, если же уже купили, просто попробуйте</div>';
                         } else if (sn.localeCompare('00178') <= 0) {
-                            document.getElementById("result").innerHTML = '<div class="passed">Уязвимость присутствует</div>';
+                            document.getElementById("result").innerHTML = '<div class="passed">Уязвимость присутствует<br>Вы можете прошить эту приставку</div>';
                         } else {
                             document.getElementById("result").innerHTML = '<div class="unknown">Нет информации</div>';
                         }
@@ -47,9 +47,9 @@
                 case 'J1':
 					sn = x.value.substring(4, 8);
                     if (sn.localeCompare('0031') >= 0) {
-                        document.getElementById("result").innerHTML = '<div class="maybe">Уязвимость возможно устранена</div>';
+                        document.getElementById("result").innerHTML = '<div class="maybe">Уязвимость возможно устранена<br>Если вы собираетесь купить эту консоль, подумайте ещё раз, если же уже купили, просто попробуйте</div>';
                     } else if (sn.localeCompare('0030') <= 0) {
-                        document.getElementById("result").innerHTML = '<div class="passed">Уязвимость присутствует</div>';
+                        document.getElementById("result").innerHTML = '<div class="passed">Уязвимость присутствует<br>Вы можете прошить эту приставку</div>';
                     } else {
                         document.getElementById("result").innerHTML = '<div class="unknown">Нет информации</div>';
                     }
@@ -57,11 +57,11 @@
                 case 'J4':
                     sn = x.value.substring(4, 8);
                     if (sn.localeCompare('006') >= 0) {
-                        document.getElementById("result").innerHTML = '<div class="failed">Уязвимость устранена</div>';
+                        document.getElementById("result").innerHTML = '<div class="failed">Уязвимость устранена<br>Вы не сможете прошить приставку!</div>';
                     } else if (sn.localeCompare('0051') >= 0) {
-                        document.getElementById("result").innerHTML = '<div class="maybe">Уязвимость возможно устранена</div>';
+                        document.getElementById("result").innerHTML = '<div class="maybe">Уязвимость возможно устранена<br>Если вы собираетесь купить эту консоль, подумайте ещё раз, если же уже купили, просто попробуйте</div>';
                     } else if (sn.localeCompare('0050') <= 0) {
-                        document.getElementById("result").innerHTML = '<div class="passed">Уязвимость присутствует</div>';
+                        document.getElementById("result").innerHTML = '<div class="passed">Уязвимость присутствует<br>Вы можете прошить эту приставку</div>';
                     } else {
                         document.getElementById("result").innerHTML = '<div class="unknown">Нет информации</div>';
                     }
@@ -69,11 +69,11 @@
                 case 'J7':
                     sn = x.value.substring(4, 8);
                     if (sn.localeCompare('005') >= 0) {
-                        document.getElementById("result").innerHTML = '<div class="failed">Уязвимость устранена</div>';
+                        document.getElementById("result").innerHTML = '<div class="failed">Уязвимость устранена<br>Вы не сможете прошить приставку!</div>';
                     } else if (sn.localeCompare('0043') >= 0) {
-                        document.getElementById("result").innerHTML = '<div class="maybe">Уязвимость возможно устранена</div>';
+                        document.getElementById("result").innerHTML = '<div class="maybe">Уязвимость возможно устранена<br>Если вы собираетесь купить эту консоль, подумайте ещё раз, если же уже купили, просто попробуйте</div>';
                     } else if (sn.localeCompare('0042') <= 0) {
-                        document.getElementById("result").innerHTML = '<div class="passed">Уязвимость присутствует</div>';
+                        document.getElementById("result").innerHTML = '<div class="passed">Уязвимость присутствует<br>Вы можете прошить эту приставку</div>';
                     } else {
                         document.getElementById("result").innerHTML = '<div class="unknown">Нет информации</div>';
                     }
