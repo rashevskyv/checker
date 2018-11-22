@@ -7,7 +7,7 @@
                 case 'W1':
                     sn = x.value.substring(4, 8);
                     if (sn.localeCompare('01') >= 0) {
-                        document.getElementById("result").innerHTML = '<div class="failed">Уязвимость устранена</div></div>';
+                        document.getElementById("result").innerHTML = '<div class="failed">Уязвимость устранена</div>';
                     } else if (sn.localeCompare('0079') >= 0) {
                         document.getElementById("result").innerHTML = '<div class="maybe">Уязвимость возможно устранена</div>';
                     } else if (sn.localeCompare('0078') <= 0) {
