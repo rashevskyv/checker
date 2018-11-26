@@ -27,7 +27,8 @@ div.checker {
 }
 
 input[type=text], select {
-    width: 400px;
+    max-width: 400px;
+	min-width: 100px;
     padding: 12px 20px;
     margin: 18px;
     display: inline-block;
