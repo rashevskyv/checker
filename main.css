@@ -30,7 +30,7 @@ input[type=text], select {
     max-width: 400px;
     min-width: 150px;
     padding: 12px 20px;
-    margin: 18px;
+    margin: 0;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
