@@ -10,7 +10,7 @@
                         document.getElementById("result").innerHTML = '<div class="failed">Уязвимость устранена<br>Вы не сможете прошить приставку!</div>';
                     } else if (sn.localeCompare('008') >= 0) {
                         document.getElementById("result").innerHTML = '<div class="maybe">Уязвимость возможно устранена<br>Если вы собираетесь купить эту консоль, подумайте ещё раз, если же уже купили, просто попробуйте</div>';
-                    } else if (sn.localeCompare('0079') <= 0) {
+                    } else if (sn.localeCompare('007') <= 0) {
                         document.getElementById("result").innerHTML = '<div class="passed">Уязвимость присутствует<br>Вы можете прошить эту приставку</div>';
                     } else {
                         document.getElementById("result").innerHTML = '<div class="unknown">Нет информации</div>';
@@ -52,7 +52,7 @@
                     break;
                 case 'J7':
                     sn = x.value.substring(4, 9);
-                    if (sn.localeCompare('00500') >= 0) {
+                    if (sn.localeCompare('00448') >= 0) {
                         document.getElementById("result").innerHTML = '<div class="failed">Уязвимость устранена<br>Вы не сможете прошить приставку!</div>';
                     } else if (sn.localeCompare('00400') <= 0) {
                         document.getElementById("result").innerHTML = '<div class="passed">Уязвимость присутствует<br>Вы можете прошить эту приставку</div>';
