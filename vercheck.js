@@ -76,12 +76,6 @@
 						document.getElementById("result").innerHTML = '<div class="unknown">Нет информации</div>';
 					}
                     break;
-                case 'W9':
-                    sn = x.value.substring(4, 9);
-                    if (sn.localeCompare('00') >= 0) {
-                        document.getElementById("result").innerHTML = '<div class="failed">Уязвимость, вероятнее всего, присутствует<br>Приставки этой серии - приставки, востановленные в самой Nintendo</div>';
-                    }
-                    break;
             }
         }
         else {
