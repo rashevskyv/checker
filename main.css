@@ -48,3 +48,27 @@ p#result {
     padding: 10px 0 0 0;
     margin: 0;
 }
+
+
+a {
+	text-decoration: none !important;
+	color: #52adc8;
+}
+
+a:visited {
+		  color: #7dc2d6;
+	}
+	
+a:visited:hover {
+		  color: #3e8296;
+	}
+
+a:hover, a:active {
+		color: #3e8296;
+		outline: 0;
+	}
+
+
+
+a img {
+	vertical-align: bottom !important;
