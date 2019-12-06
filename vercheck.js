@@ -75,7 +75,7 @@
                                     document.getElementById("result").innerHTML = passed;
                                 } else if (sn.localeCompare('0083') >= 0) {
                                     document.getElementById("result").innerHTML = failed;
-                                } else if (sn.localeCompare('0048') == 0) {
+                                } else if (sn.localeCompare('00480') == 0) {
                                     document.getElementById("result").innerHTML = passed;
                                 } else if (sn.localeCompare('0046') >= 0) {
                                     document.getElementById("result").innerHTML = failed;
