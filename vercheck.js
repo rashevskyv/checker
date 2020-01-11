@@ -73,7 +73,7 @@
                                 sn = x.value.substring(4, 10);
                                 if (sn.localeCompare('0083') >= 0) {
                                     document.getElementById("result").innerHTML = failed;
-                                } else if (sn.localeCompare('00532') == 0) {
+                                } else if (sn.localeCompare('00532') < 0) {
                                     document.getElementById("result").innerHTML = passed;
                                 } else if (sn.localeCompare('00533') >= 0) {
                                     document.getElementById("result").innerHTML = maybe;
