@@ -84,7 +84,7 @@
                                     
                             case 'AJ7':
                                 sn = x.value.substring(4, 9);
-                                if (sn.localeCompare('005') >= 0) {
+                                if (sn.localeCompare('00464') >= 0) {
                                     document.getElementById("result").innerHTML = failed;
                                 } else if (sn.localeCompare('004') >= 0) {
                                     document.getElementById("result").innerHTML = maybe;
