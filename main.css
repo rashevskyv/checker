@@ -6,6 +6,10 @@ div.checker {
     text-align: left;
 }
 
+.unknown, .passed, .maybe, .failed {
+    display: inline-block;
+}
+
 .unknown {
     color: dimgrey;
     font-weight: bolder;
