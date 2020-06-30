@@ -58,7 +58,7 @@ module.exports = function () {
             }))
             .pipe($.gp.sourcemaps.write())
             .pipe($.gulp.dest(path.build + '/css/'))
-            .pipe($.gulp.dest(path.switch + '/assets/css/'))
+            // .pipe($.gulp.dest(path.switch + '/assets/css/'))
             .pipe($.bs.reload({
                 stream: true
             }));

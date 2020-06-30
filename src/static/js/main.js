@@ -34,9 +34,10 @@ $.extend(true, Component.prototype, {
 	_bindInteractions() {
 	this.$container.on('click', this.showResult.bind(this));
 	$(".descriptionToggler").click(function() {
-		$('html, body').animate({
-			 scrollTop: $("#scroll_here").offset().top
-		}, 600);
+			$('html, body').animate({
+				scrollTop: $("#scroll_here").offset().top
+			}, 600);
+			$( ".inputtext" ).focus();
   		});
 	},
 });

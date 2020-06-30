@@ -35,7 +35,7 @@ module.exports = function () {
     $.gulp.task('scripts', function () {
         return $.gulp.src(path.js + '/*.js')
             .pipe($.gulp.dest(path.build + '/js/'))
-            .pipe($.gulp.dest(path.switch + '/assets/js/'))
+            // .pipe($.gulp.dest(path.switch + '/assets/js/'))
             .pipe($.bs.reload({
                 stream: true
             }));
