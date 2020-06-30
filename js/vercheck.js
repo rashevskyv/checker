@@ -16,7 +16,9 @@ function checkSerial() {
 
             var unknown='<div class="unknown checker_p">Нет информации по введённому серийному номеру</div><p class="checker_p">Проверьте, правильно ли вы ввели серийный номер</p><p class="checker_p">Если серийный номер всё-таки введён верно, значит серийников такого типа ещё нет в нашей базе. Возможно, приставка выпускалась эксклюзивно для китайского региона. </p><p class="checker_p">В любом случае, если серийник введён верно, то вашу приставку нельзя прошить с помощью <a class="checker_a" href="http://switch.customfw.xyz/fusee-gelee">Fusée Gelée</a>. Если это ваш случай, то для вашей приставки подойдёт <strong>чип SX Core.</strong></p><p class="checker_p"><strong>Подробнее про чипы <a href="https://sx.customfw.xyz/">на сайте нашего магазина</a>. Там же можно сделать заказ.</strong></p>';
 
+            
             $('.table__wrapper').slideUp(300);
+            $('.check-result').removeClass('hidden')
             $('.checker_p').slideUp(300);
             $('.check-result').fadeIn(300);
 

@@ -7,22 +7,23 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="keywords" content="">
     <link rel="stylesheet" type="text/css" href="css/libs.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css"><!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/main_checker.css"><!--[if lt IE 9]>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
   </head>
-  <body>
+  <body class="body">
     <div class="content" id="fullpage">
       <div class="checker__body">
-        <h1>Помощник в выборе метода прошивки Nintendo Switch</h1>
+        <h1 class="checker_title">Помощник в выборе метода прошивки Nintendo Switch</h1>
         <div class="table__wrapper">
           <div class="table__container">
             <div class="table__ns__caption table__caption">Nintendo Switch</div>
-            <div class="table__ns__body table__body" id="ns"><img class="table descriptionToggler" src="img/ns.png" alt="Nintendo Switch" data-result="result1"></div>
+            <div class="table__ns__body table__body" id="ns"><img class="table descriptionToggler" id="button" src="img/ns.png" alt="Nintendo Switch" data-result="result1"></div>
             <div class="table__nsl__caption table__caption">Nintendo Switch Lite</div>
             <div class="table__nsl__body table__body" id="nsl"><img class="table descriptionToggler" src="img/nsl.png" alt="Nintendo Switch Lite" data-result="result2"></div>
           </div>
         </div>
-        <div class="result hidden"></div>
+        <div class="result hidden" id="scroll_here"></div>
         <div class="check-result hidden"></div>
       </div>
     </div>
