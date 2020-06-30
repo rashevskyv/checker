@@ -1,0 +1,18 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Помощник в выборе метода прошивки Nintendo Switch'
+
+block content
+    .checker__body
+        h1.checker_title !{title}
+        .table__wrapper
+            .table__container
+                .table__ns__caption.table__caption Nintendo Switch
+                .table__ns__body.table__body#ns
+                    img#button.table(src="img/ns.png" alt="Nintendo Switch" data-result="result1" class="descriptionToggler")
+                .table__nsl__caption.table__caption Nintendo Switch Lite
+                .table__nsl__body.table__body#nsl
+                    img.table(src="img/nsl.png" alt="Nintendo Switch Lite" data-result="result2" class="descriptionToggler")
+        div#scroll_here.result.hidden
+        div.check-result.hidden
