@@ -33,15 +33,14 @@ $.extend(true, Component.prototype, {
 		this.addContent() 
 		
 		this.result.slideDown(500);
-		$('.result').removeClass('hidden')
+			$('html, body').animate({
+				scrollTop: $(".result").offset().top
+			}, 600);		$('.result').removeClass('hidden')
 	},
 
 	_bindInteractions() {
 	this.$container.on('click', this.showResult.bind(this));
 	$(".descriptionToggler").click(function() {
-			$('html, body').animate({
-				scrollTop: $("#scroll_here").offset().top
-			}, 600);
 			$( ".inputtext" ).focus();
   		});
 	},
