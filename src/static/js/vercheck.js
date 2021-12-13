@@ -25,6 +25,10 @@ function checkSerial() {
             switch (series) {
                 case 'K': 
                     document.querySelector(".check-result").innerHTML = new_revision;
+                case 'J': 
+                    document.querySelector(".check-result").innerHTML = new_revision;
+                case 'T': 
+                    document.querySelector(".check-result").innerHTML = new_revision;
                 
                 case 'A': 
                     var series = x.value.substring(1, 4).toUpperCase();
